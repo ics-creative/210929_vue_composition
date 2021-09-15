@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <a href="../" v-if="!isTopPage">◀︎ サンプル一覧に戻る</a>
+    <router-link v-if="!isTopPage" to="/">◀︎ サンプル一覧に戻る</router-link>
     <routerView />
   </div>
 </template>
