@@ -5,11 +5,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "format": "prettier --write 'src/**/*.(ts|vue)'"
   },
   "dependencies": {
     "@types/jsonp": "^0.2.1",
     "jsonp": "^0.2.1",
+    "prettier": "^2.4.0",
     "sass": "^1.39.0",
     "vue": "^3.2.6",
     "vue-router": "4",

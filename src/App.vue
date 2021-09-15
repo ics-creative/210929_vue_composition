@@ -1,10 +1,21 @@
 <template>
   <div class="app">
+    <a href="/" v-if="!isTopPage">◀︎ サンプル一覧に戻る</a>
     <routerView />
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
+import { computed, defineComponent } from 'vue'
+import { useRoute } from 'vue-router'
+
+export default defineComponent({
+  setup() {
+    const route = useRoute()
+    const isTopPage = computed(() => route.name === 'Top')
+    return { isTopPage }
+  },
+})
 </script>
 
 <style>
@@ -13,26 +24,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
-}
-h2 {
-  text-align: center;
 }
 .app {
   padding: 20px;
 }
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  padding-top: 20px;
+.description {
+  padding: 20px 0 40px 0;
 }
-.card {
-  width: 300px;
-  min-height: 200px;
-  border: 1px solid #ddd;
-  padding: 24px;
-  border-radius: 4px;
-  box-shadow: 0 0 20px #2c3e5030;
+a {
+  color: rgb(53, 101, 121);
 }
 </style>
