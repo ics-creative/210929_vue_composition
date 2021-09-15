@@ -5,7 +5,7 @@
     Intersection Observerは多機能で利用するための手順が少々複雑ですが、
     コンポジション関数に追い出して必要な機能のみを提供することで、
     コンポーネントから簡単に利用できるようにしています。
-    <a href="xxx" class="source">ソースコードを見る</a>
+    <a href="https://github.com/ics-creative/211007_vue_composition/tree/master/src/samples/05_scroll" class="source">ソースコードを見る</a>
   </div>
 
   <div class="ScrollView">

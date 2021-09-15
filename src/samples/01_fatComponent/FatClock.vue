@@ -3,7 +3,7 @@
   <div class="description">
     シンプルな時計のコンポーネントです。機能が少ないため、コードの行数自体はさほど多くありませんが、
     コンポーネントの責務が曖昧なので、機能追加によって肥大化してしまうリスクがあります。
-    <a href="xxx" class="source">ソースコードを見る</a>
+    <a href="https://github.com/ics-creative/211007_vue_composition/blob/master/src/samples/01_fatComponent/FatClock.vue" class="source">ソースコードを見る</a>
   </div>
 
   <div class="FatClock">

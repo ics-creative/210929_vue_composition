@@ -3,7 +3,7 @@
     <h1>ロジックをコンポジション関数に分割する：FizzBuzzの例</h1>
     <div class="description">
       FizzBuzzを表示するシンプルなコンポーネントです。以下の2つは機能としては同一です。
-      <a href="xxx" class="source">ソースコードを見る</a>
+      <a href="https://github.com/ics-creative/211007_vue_composition/tree/master/src/samples/02_fizzBuzz" class="source">ソースコードを見る</a>
     </div>
 
     <h2>分割前（FizzBuzzViewBefore.vue）</h2>
