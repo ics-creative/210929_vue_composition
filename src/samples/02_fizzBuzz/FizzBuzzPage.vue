@@ -1,36 +1,42 @@
 <template>
-  <div class="FizzBuzzPage">
-    <h1>ロジックをコンポジション関数に分割する：FizzBuzzの例</h1>
-    <div class="description">
-      FizzBuzzを表示するシンプルなコンポーネントです。以下の2つは機能としては同一です。
-      <a href="https://github.com/ics-creative/211007_vue_composition/tree/master/src/samples/02_fizzBuzz" class="source">ソースコードを見る</a>
+  <div class="FizzBuzzPage page">
+    <h1>ロジックをコンポジション関数に分割する：FizzBuzz</h1>
+
+    <div class="demo">
+      <FizzBuzzViewCapture />
+      <div class="note">
+        FizzBuzzは元々簡単な言葉遊びのゲームです。<br>
+        プレーヤーは1から順番に次のルールで数字を読み上げます：
+        <ol>
+          <li>数字が3の倍数なら数字の代わりに「Fizz」</li>
+          <li>数字が5の倍数なら数字の代わりに「Buzz」</li>
+          <li>数字が3と5両方の倍数なら数字の代わりに「FizzBuzz」</li>
+          <li>上記のいずれでもなければ数字をそのまま</li>
+        </ol>
+        ごくシンプルなルールなので、プログラミングの入門課題としてよく登場します。
+      </div>
     </div>
 
-    <h2>分割前（FizzBuzzViewBefore.vue）</h2>
-    <div class="demo">
-      <FizzBuzzViewBefore />
-    </div>
-
-    <h2>分割後（FizzBuzzViewAfter.vue）</h2>
-    <div class="demo">
-      <FizzBuzzViewAfter />
-    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import FizzBuzzViewBefore from './FizzBuzzViewBefore.vue'
-import FizzBuzzViewAfter from './FizzBuzzViewAfter.vue'
+import FizzBuzzViewCapture from './FizzBuzzCapture.vue'
 
 export default defineComponent({
-  components: { FizzBuzzViewBefore, FizzBuzzViewAfter },
+  components: { FizzBuzzViewCapture },
   setup() {},
 })
 </script>
 
 <style lang="scss" scoped>
 .demo {
+  display: flex;
   padding: 40px;
+  gap: 20px;
+  > * {
+    flex-grow: 1;
+  }
 }
 </style>

@@ -1,11 +1,4 @@
 <template>
-  <h1>1コンポーネントにすべての機能を詰め込んだ例</h1>
-  <div class="description">
-    シンプルな時計のコンポーネントです。機能が少ないため、コードの行数自体はさほど多くありませんが、
-    コンポーネントの責務が曖昧なので、機能追加によって肥大化してしまうリスクがあります。
-    <a href="https://github.com/ics-creative/211007_vue_composition/blob/master/src/samples/01_fatComponent/FatClock.vue" class="source">ソースコードを見る</a>
-  </div>
-
   <div class="FatClock">
     <div class="clock">
       <div class="hand hour" :style="{ transform: `rotate(${angles.hour}deg)` }"></div>
@@ -25,20 +18,8 @@ export default {
     }
   },
   computed: {
-    timeText() {
-      const d = this.current
-      const [h, m, s] = [d.getHours(), d.getMinutes(), d.getSeconds()]
-      return [h, m, s].map((num) => String(num).padStart(2, '0')).join(':')
-    },
-    angles() {
-      const d = this.current
-      const [h, m, s] = [d.getHours(), d.getMinutes(), d.getSeconds()]
-      return {
-        hour: (((h % 12) + m / 60) / 12) * 360 - 90,
-        minute: ((m + s / 60) / 60) * 360 - 90,
-        second: (s / 60) * 360 - 90,
-      }
-    },
+    timeText() {/* 略 */},
+    angles() {/* 略 */},
   },
   methods: {
     updateTime() {

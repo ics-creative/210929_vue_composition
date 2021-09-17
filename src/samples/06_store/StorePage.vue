@@ -1,21 +1,30 @@
 <template>
-  <div class="TimePage">
+  <div class="TimePage page">
     <h1>Vuexストアの入出力を分割する例</h1>
-    <div class="description">
-      Vuexストアに格納された長さ(length)と角度(angle)の2つの値を、それぞれ複数の単位で表示・更新する例です。
-      ストアの値を表示側の単位にあわせて変換する処理をコンポジション関数が担うことで、
-      コンポーネントとストア両方の肥大化を防いでいます。
-      <a href="https://github.com/ics-creative/211007_vue_composition/tree/master/src/samples/06_store" class="source">ソースコードを見る</a>
-    </div>
 
     <div class="demo">
-      <h2>何かの長さ</h2>
-      <StoreLength unit="px" />
-      <StoreLength unit="inch" />
-      <StoreLength unit="mm" />
-      <h2>何かの角度</h2>
-      <StoreAngle unit="deg" />
-      <StoreAngle unit="rad" />
+      <div class="store">
+        <h2>何かの長さ</h2>
+        <StoreLength unit="px" />
+        <StoreLength unit="inch" />
+        <StoreLength unit="mm" />
+        <h2>何かの角度</h2>
+        <StoreAngle unit="deg" />
+        <StoreAngle unit="rad" />
+      </div>
+      <div class="note">
+        <p>
+          Vuexストアに格納された長さ(length)と角度(angle)の<br>
+          2つの値をそれぞれ複数の単位で表示・更新する例です。<br>
+          ひとつのテキストボックスを編集すると、ストアの値が<br>
+          更新され他の単位のテキストボックスも値が変わります。
+        </p>
+        <p>
+          ストアの値を表示側の単位にあわせて変換する処理を<br>
+          コンポジション関数が担うことで、コンポーネントと<br>
+          ストア両方の肥大化を防いでいます。
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -33,6 +42,18 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .demo {
+  display: flex;
   padding: 40px;
+  gap: 20px;
+  h2 {
+    font-size: 20px;
+  }
+  .store {
+    width: 50%;
+    font-size: 24px;
+  }
+  .note {
+    width: 50%;
+  }
 }
 </style>

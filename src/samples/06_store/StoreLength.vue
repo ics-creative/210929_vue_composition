@@ -20,3 +20,15 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="scss" scoped>
+.StoreLengthView {
+  input {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 4px;
+    border: 2px solid currentColor;
+    border-radius: 4px;
+  }
+}
+</style>
