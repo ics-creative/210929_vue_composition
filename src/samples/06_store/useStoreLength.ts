@@ -5,7 +5,7 @@ import { State } from '../../store'
 /** Px/Inchの値。この例では72dpi固定とします */
 const DPI = 72
 /** Inch→mmの換算値 */
-const INCH2MM = 24.5
+const INCH2MM = 25.4
 
 export const useStoreLength = (unit: Ref<'px' | 'inch' | 'mm'>) => {
   // ストアを利用する（useStoreはVuexが提供しているコンポジション関数）
