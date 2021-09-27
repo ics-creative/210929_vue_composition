@@ -24,11 +24,11 @@ export default defineComponent({
     }
 
     // 更新用タイマーをセット
-    let timer = setInterval(updateDate, 100)
+    let timer = window.setInterval(updateDate, 100)
 
     // 更新用タイマーを解除
     onBeforeUnmount(() => {
-      clearInterval(timer)
+      window.clearInterval(timer)
     })
 
     return { timeText }
