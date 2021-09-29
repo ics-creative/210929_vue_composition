@@ -1,7 +1,7 @@
 <template>
   <div class="app">
       <router-link v-if="!isTopPage" to="/">◀︎ サンプル一覧に戻る</router-link>
-      <a href="https://ics.media/entry/211007/">◀︎ 記事に戻る</a>
+      <a href="https://ics.media/entry/210929/">◀︎ 記事に戻る</a>
     <routerView />
   </div>
 </template>

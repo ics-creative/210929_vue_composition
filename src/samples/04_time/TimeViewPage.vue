@@ -3,7 +3,7 @@
     <h1>定型処理をコンポジション関数に分割する：setIntervalの例</h1>
     <div class="description">
       setIntervalを使って時間を表示するシンプルなコンポーネントです。以下の2つは機能としては同一です。
-      <a href="https://github.com/ics-creative/211007_vue_composition/tree/master/src/samples/04_time" class="source">ソースコードを見る</a>
+      <a href="https://github.com/ics-creative/210929_vue_composition/tree/master/src/samples/04_time" class="source">ソースコードを見る</a>
     </div>
 
     <h2>分割前（TimeViewBefore.vue）</h2>

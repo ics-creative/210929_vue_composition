@@ -4,7 +4,7 @@
     郵便番号検索を行う実用的なコンポーネントの例です。
     API通信や非同期の状態管理をコンポジション関数に分割したことで、
     コンポーネント側では画面表示や入力に関するロジックのみを実装しています。
-    <a href="https://github.com/ics-creative/211007_vue_composition/tree/master/src/samples/03_postalSearch" class="source">ソースコードを見る</a>
+    <a href="https://github.com/ics-creative/210929_vue_composition/tree/master/src/samples/03_postalSearch" class="source">ソースコードを見る</a>
   </div>
 
   <div class="PostalSearch">
