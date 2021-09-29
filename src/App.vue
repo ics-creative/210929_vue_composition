@@ -1,6 +1,7 @@
 <template>
   <div class="app">
-    <router-link v-if="!isTopPage" to="/">◀︎ サンプル一覧に戻る</router-link>
+      <router-link v-if="!isTopPage" to="/">◀︎ サンプル一覧に戻る</router-link>
+      <a href="https://ics.media/entry/211007/">◀︎ 記事に戻る</a>
     <routerView />
   </div>
 </template>
@@ -33,5 +34,8 @@ export default defineComponent({
 }
 a {
   color: rgb(53, 101, 121);
+}
+a + a {
+  margin-left: 12px;
 }
 </style>
